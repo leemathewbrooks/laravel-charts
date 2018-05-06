@@ -1,0 +1,24 @@
+{
+    "name": "pawprintdigital/laravel-charts",
+    "description": "Laravel chart production helper",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.*",
+        "balping/json-raw-encoder": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PawprintDigital\\LaravelCharts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PawprintDigital\\LaravelCharts\\LaravelChartsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
