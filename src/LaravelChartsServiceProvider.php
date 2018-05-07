@@ -14,10 +14,6 @@ class LaravelChartsServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        $this->publishes([
-            __DIR__.'/Config/charts.php' => config_path('charts.php'),
-        ], 'charts_config');
-
         $this->loadViewsFrom(__DIR__.'/Views', 'charts');
 
         $this->publishes([
@@ -38,9 +34,9 @@ class LaravelChartsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(
+        /*$this->mergeConfigFrom(
             __DIR__.'/Config/charts.php',
             'charts'
-        );
+        );*/
     }
 }

@@ -1,3 +1,3 @@
 <div id="{{ $chart->id }}" {!! $chart->formatContainerOptions('css') !!}>
-    @include('charts::loader')
+  @include('charts::loader')
 </div>

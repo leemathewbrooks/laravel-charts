@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
     function {{ $chart->id }}_create(data) {
         {{ $chart->id }}_rendered = true;
         var loader_element = document.getElementById("{{ $chart->id }}_loader");

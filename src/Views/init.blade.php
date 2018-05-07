@@ -11,4 +11,3 @@ let {{ $chart->id }}_load = function () {
     }
 };
 window.addEventListener("load", {{ $chart->id }}_load);
-document.addEventListener("turbolinks:load", {{ $chart->id }}_load);

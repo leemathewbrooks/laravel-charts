@@ -1,6 +1,6 @@
 {
     "name": "pawprintdigital/laravel-charts",
-    "description": "Laravel chart production helper",
+    "description": "Laravel chart production helper for Hightcharts",
     "license": "MIT",
     "type": "library",
     "require": {

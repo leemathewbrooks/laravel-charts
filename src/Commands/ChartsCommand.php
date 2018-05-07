@@ -11,9 +11,7 @@ class ChartsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:chart
-                                {name : The name of the chart file}
-                                {library? : Library of the chart}';
+    protected $signature = 'make:chart {name : The name of the chart file}';
 
     /**
      * The console command description.
@@ -39,7 +37,7 @@ class ChartsCommand extends Command
      */
     public function handle()
     {
-        $this->line('[Charts] Creating chart...');
+        $this->line('Creating chart...');
 
         $path = base_path('app/Charts');
 
@@ -50,7 +48,7 @@ class ChartsCommand extends Command
         $fpath = $path.'/'.$this->argument('name').'.php';
 
         if (file_exists($fpath)) {
-            $this->error('[Charts] File already exists!');
+            $this->error('File already exists!');
 
             return;
         }
@@ -66,7 +64,7 @@ class ChartsCommand extends Command
             $fpath
         );
 
-        $this->info("[Charts] Chart created! - Location: {$fpath}");
+        $this->info("Chart created! - Location: {$fpath}");
     }
 
     /**
